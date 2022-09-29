@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteRule ^pg/([0-9a-zA-Z_-]+) index.php?page=$1  
+
+  RewriteRule ^forum/cat/([0-9a-zA-Z_-]+) index.php?page=forum&cat=$1
+  RewriteRule ^forum index.php?page=forum
+   RewriteRule ^apie index.php?page=about
+    RewriteRule ^galerija index.php?page=galerija
+	RewriteRule ^iseiti index.php?page=exit
+	RewriteRule ^admin index.php?page=adminmain
+  RewriteRule ^forum/topic/([0-9a-zA-Z_-]+) index.php?page=forum&topic=$1
+   RewriteRule ^susisiekti index.php?page=susisiekti
+   RewriteRule ^susisiekti index.php?page=susisiekti
+  RewriteRule ^pg/g/imageid/([0-9a-zA-Z_-]+)/imagename/([0-9a-zA-Z_-]+) index.php?page=g&imageid=$1&image=$2
+ 
+ 
+ 
